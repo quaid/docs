@@ -5,13 +5,13 @@ freely provided to the public by [Red Hat](ftp://ftp.redhat.com/pub/redhat/linux
 for Red Hat Enterprise Linux (RHEL). As such, CentOS Linux aims to be
 functionally compatible with RHEL. The CentOS Project mainly changes
 packages to remove upstream vendor branding and artwork. CentOS Linux
-is no-cost and free to redistribute. Each CentOS version is maintained
+is no-cost and free to redistribute. Each CentOS Linux version is maintained
 for up to 10 years (by means of security updates -- the duration of the
 support interval by Red Hat has varied over time with respect to Sources
-released). A new CentOS version is released approximately every 2 years
-and each CentOS version is periodically updated (roughly every 6 months)
+released). A new CentOS Linux version is released approximately every 2 years
+and each CentOS Linux version is periodically updated (roughly every 6 months)
 to support newer hardware. This results in a secure, low-maintenance,
-reliable, predictable and reproducible Linux environment.
+reliable, predictable, and reproducible Linux environment.
 
 
 > [wiki.centos.org](https://wiki.centos.org/FrontPage)
@@ -20,11 +20,11 @@ reliable, predictable and reproducible Linux environment.
 
 # CentOS image documentation
 
-The `centos:latest` tag will always be the most recent version currently
+The `centos:latest` tag is always the most recent version currently
 available.
 
-CentOS offers regularly updated images for all active releases. These images
-will be updated monthly or as needed for emergency fixes. These rolling
+The CentOS Project offers regularly updated images for all active releases. These
+images will be updated monthly or as needed for emergency fixes. These rolling
 updates are tagged with the major version number only. 
 For example: `docker pull centos:6` or `docker pull centos:7`
 
@@ -89,7 +89,7 @@ Build this image:
 
 In order to run a container with systemd, you will need to use the
 `--privileged` option mentioned earlier, as well as mounting the cgroups
-volumes from the host. Below is an example command which will run the
+volumes from the host. Below is an example command that will run the
 systemd enabled httpd container created earlier.
 
     docker run --privileged -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 local/c7-systemd-httpd
