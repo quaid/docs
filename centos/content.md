@@ -1,13 +1,20 @@
 # CentOS
 
-CentOS (abbreviated from Community Enterprise Operating System) is a Linux
-distribution that attempts to provide a free, enterprise-class,
-community-supported computing platform which aims to be 100% binary compatible
-with its upstream source, Red Hat Enterprise Linux (RHEL). In January 2014, it
-was announced that CentOS was officially joining forces with Red Hat while
-staying independent from RHEL, under a new CentOS Governing Board.
+CentOS Linux is a community-supported distribution derived from sources
+freely provided to the public by [Red Hat](ftp://ftp.redhat.com/pub/redhat/linux/enterprise/)
+for Red Hat Enterprise Linux (RHEL). As such, CentOS Linux aims to be
+functionally compatible with RHEL. The CentOS Project mainly changes
+packages to remove upstream vendor branding and artwork. CentOS Linux
+is no-cost and free to redistribute. Each CentOS version is maintained
+for up to 10 years (by means of security updates -- the duration of the
+support interval by Red Hat has varied over time with respect to Sources
+released). A new CentOS version is released approximately every 2 years
+and each CentOS version is periodically updated (roughly every 6 months)
+to support newer hardware. This results in a secure, low-maintenance,
+reliable, predictable and reproducible Linux environment.
 
-> [wikipedia.org/wiki/CentOS](https://en.wikipedia.org/wiki/CentOS)
+
+> [wiki.centos.org](https://wiki.centos.org/FrontPage))
 
 This is the official CentOS image, and will be updated on a regular schedule or
 as needed for emergency fixes.
