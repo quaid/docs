@@ -14,12 +14,25 @@ to support newer hardware. This results in a secure, low-maintenance,
 reliable, predictable and reproducible Linux environment.
 
 
-> [wiki.centos.org](https://wiki.centos.org/FrontPage))
-
-This is the official CentOS image, and will be updated on a regular schedule or
-as needed for emergency fixes.
-
-The `centos:latest` tag will always point to the most recent version currently
-available, and `centos:centos6` will point to the latest version of the CentOS 6 tree.
+> [wiki.centos.org](https://wiki.centos.org/FrontPage)
 
 %%LOGO%%
+
+# CentOS image documentation
+
+The `centos:latest` tag will always be the most recent version currently
+available.
+
+CentOS offers regularly updated images for all active releases. These images
+will be updated monthly or as needed for emergency fixes. These rolling
+updates are tagged with the major version number only. 
+For example: `docker pull centos:6` or `docker pull centos:7`
+
+Additionally, images that correspond to install media are also offered. These
+images DO NOT recieve updates as they are intended to match installation iso
+contents. If you choose to use these images it is highly recommended that you
+include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise
+address any potential security concerns. To use these images, please specify
+the minor version tag:
+
+For example `docker pull centos:5.11` or `docker pull centos:6.6`
